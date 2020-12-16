@@ -6,8 +6,6 @@
 p
 {
 	color: black;
-	/* line-height: 100px; */
-	/* background: #000; */
 	text-align: center;
 	margin: 0;
 }
@@ -148,9 +146,8 @@ input, textarea{
 
 #promo 
 {
-	/* margin-top: 40px; */
+	
 	border-bottom: solid 1px #DDD;
-	/*padding-bottom: 40px;*/
 	display: flex;
 	grid-column: 1/1;
 	grid-row: 1/2;
@@ -190,7 +187,6 @@ input, textarea{
 	margin-top: 40px;
 	display: grid;
 	flex-direction: row;
-	/* justify-content: space-between; */
 	border-bottom: solid 1px #DDD;
 	padding-bottom: 80px;
 }
@@ -256,18 +252,6 @@ input, textarea{
 }
 
 
-/* .productInfo-left-text{
-	margin-left: 20px;
-	grid-column: 3/4;
-	grid-row: 1/1;
-} */
-
-/*Get rid of this, here just to give different height to productInfo*/
-/* #productInfo p 
-{
-	line-height: 300px;
-} */
-
 .productDesc 
 {
 	width: 200px;
@@ -317,9 +301,6 @@ a, #footer-nav{
 	width: 310px;
 }
 
-/* .copyright-txt{
-	font-size: 10px;
-} */
 
 /*Page 2 - Notice we are using one style sheet for all of the pages*/
 
@@ -331,14 +312,8 @@ a, #footer-nav{
 	flex-direction: row;
 	display: grid;
 	grid-template-columns: (2, auto);
-	/* justify-content: center; */
 }
 
-/*Get rid of this, here just to give different height to promo*/
-/* #contentCon p 
-{
-	line-height: 630px;
-} */
 
 .top-content{
 	display: grid;
@@ -379,7 +354,6 @@ a, #footer-nav{
 .top-content-right{
 	display: flex;
 	flex-direction: column;
-	/* align-self: flex-end; */
 	grid-column: 4/6;
 	grid-row: 1/1;
 }
@@ -412,14 +386,12 @@ a, #footer-nav{
 	grid-column: 1/2;
 	grid-row: 1/1;
 	width: 440px;
-	/* width: 100%; */
 }
 
 #content2 
 {
 	grid-column: 3/4;
 	grid-row: 1/1;
-	/* margin-left: auto; */
 	width: 440px;
 }
 
