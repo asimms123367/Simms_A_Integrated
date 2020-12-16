@@ -1,0 +1,552 @@
+.hidden 
+{
+	display: none;
+}
+
+p
+{
+	color: black;
+	/* line-height: 100px; */
+	/* background: #000; */
+	text-align: center;
+	margin: 0;
+}
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img 
+{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0;
+}
+
+/*html selectors*/
+
+body 
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #036a13;
+	height: 20px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	margin-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 1px #DDD;
+}
+
+/*This is a flex item*/
+#logo
+{
+	width: 200px;
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav 
+{
+	margin-left: auto;
+	width: 500px;
+	height: 100px;
+	margin-top: 45px;
+	margin-left: auto;
+}
+
+#mainNav ul
+{ 
+	list-style-type: none;
+	padding: 0;
+
+}
+
+#mainNav ul li
+{
+	display: inline;
+	font-size: 18px;
+	margin-left: 25px;
+}
+
+#mainNaV ul li a
+{
+	color:	#000;
+	padding: 5px;
+}
+
+#mainNav ul li a:hover
+{
+	background-color: green;
+	color: white;
+}
+
+label{
+	font-size: 24px;
+}
+
+input, textarea{
+	font-size: 18px;
+  	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	background-color: rgb(253, 253, 239);
+	  
+}
+
+#promo 
+{
+	/* margin-top: 40px; */
+	border-bottom: solid 1px #DDD;
+	/*padding-bottom: 40px;*/
+	display: flex;
+	grid-column: 1/1;
+	grid-row: 1/2;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 258px;
+}
+
+#text{
+	z-index: 999;
+}
+
+#banner-text 
+{ 
+	color: white;
+	display: flex;
+	padding-left: 20%;
+	font-size: 30px;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.5)
+
+
+}
+
+#picture{
+	height: 259px;
+	width: 920px;
+	object-fit: cover;
+	z-index: -1;
+	position: absolute;
+}
+
+
+
+#productInfo 
+{
+	margin-top: 40px;
+	display: grid;
+	flex-direction: row;
+	/* justify-content: space-between; */
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 80px;
+}
+
+#picture-right, #picture-left{
+	height: 300px;
+	width: 200px;
+	object-fit: cover;
+}
+
+#picture-left{
+	grid-column: 1/2;
+	grid-row: 1/1;
+}
+
+#picture-right{
+	grid-column: 3/4;
+	grid-row: 1/1;
+}
+
+.details{
+	display: flex;
+	display: grid;
+	grid-template-columns: (4, auto);
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.details-left{
+	display: flex;
+	flex-direction: row;
+	grid-column: 1/2;
+	grid-row: 1/1;
+	margin-right: 20px;
+}
+
+.details-right{
+	display: flex;
+	flex-direction: row;
+	grid-column: 3/4;
+	grid-row: 1/1;
+	margin-left: 20px;
+}
+
+.details-header{
+	font-size: 20px;
+}
+
+#productInfo-text{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	text-align: left;
+}
+.txt-cont{
+	margin-top: 60px;
+
+}
+.productInfo-left{
+	grid-column: 1 / 2;
+    grid-row: 1 / 1;
+}
+
+
+/* .productInfo-left-text{
+	margin-left: 20px;
+	grid-column: 3/4;
+	grid-row: 1/1;
+} */
+
+/*Get rid of this, here just to give different height to productInfo*/
+/* #productInfo p 
+{
+	line-height: 300px;
+} */
+
+.productDesc 
+{
+	width: 200px;
+}
+
+#mainFooter 
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#footerNav 
+{
+	width: 500px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.footer-list{
+	display: flex;
+	flex-direction: row;
+	
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+li{
+	margin-right: 20px;
+	list-style: none;
+	font-size: 20px;
+}
+
+a, #footer-nav{
+	color: green;
+}
+
+#copyRight 
+{
+	margin-left: auto;
+	width: 310px;
+}
+
+/* .copyright-txt{
+	font-size: 10px;
+} */
+
+/*Page 2 - Notice we are using one style sheet for all of the pages*/
+
+#contentCon {
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+	display: grid;
+	grid-template-columns: (2, auto);
+	/* justify-content: center; */
+}
+
+/*Get rid of this, here just to give different height to promo*/
+/* #contentCon p 
+{
+	line-height: 630px;
+} */
+
+.top-content{
+	display: grid;
+	grid-template-columns: (2, auto);
+	grid-column: 1/1;
+	grid-row: 1/2;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+.top-content-txt{
+	width: 460px;
+	grid-column: 1/3;
+	grid-row: 1/1;
+}
+
+.tc-header{
+	margin: 0;
+	font-size: 70px;
+	text-align: center;
+}
+
+.tc-header2{
+	margin: 0;
+	font-size: 40px;
+	text-align: center;
+}
+
+.paragraph{
+	margin: 0;
+	margin-top: 24px;
+	font-size: 22px;
+	text-align: left;
+}
+
+.top-content-right{
+	display: flex;
+	flex-direction: column;
+	/* align-self: flex-end; */
+	grid-column: 4/6;
+	grid-row: 1/1;
+}
+
+.label{
+	color: green;
+	text-align: center;
+}
+
+.bottom-content{
+	grid-column: 1/1;
+	grid-row: 3/4;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+#contact-cont{
+	grid-column: 1/1;
+	grid-row: 1/1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 80px;
+}
+
+#content1 
+{
+	grid-column: 1/2;
+	grid-row: 1/1;
+	width: 440px;
+	/* width: 100%; */
+}
+
+#content2 
+{
+	grid-column: 3/4;
+	grid-row: 1/1;
+	/* margin-left: auto; */
+	width: 440px;
+}
+
+#contact-imgs{
+	width: 115px;
+	height: 146px;
+	object-fit: cover;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+
+}
+
+input{
+	width: 440px;
+	height: 30px;
+}
+
+input[type=text]:focus {
+  border: 1px solid #036a13;
+}
+
+label{
+	margin-top: 30px;
+}
+
+/*Page 3*/
+
+#productImages 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+}
+
+/*Get rid of this, here just to give different height*/
+#productImages p
+{
+	line-height: 250px;
+}
+
+.productImg 
+{
+	width: 280px;
+}
+
+#contentAreaBig
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+}
+
+/*Get rid of this, here just to give different height*/
+#contentAreaBig p 
+{
+	line-height: 300px;
+}
+
+#promoImageBig
+{
+	width: 920px;
+}
+
+/*Page 4*/
+
+.productDescLargeLeft 
+{
+	width: 410px;
+}
+
+.productDescLargeRight 
+{
+	width: 410px;
+}
+
+.submit {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+	background-color: #036a13;
+	background-image: linear-gradient(to top left,
+									rgba(0, 0, 0, .2),
+									rgba(0, 0, 0, .2) 70%,
+									rgba(0, 0, 0, 0));
+
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.submit:hover {
+    background-color: rgba(35, 153, 29, 0.993);
+}
+
+.submit:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.icon
+{
+	text-align: center;
+	width: 180px;
+    border: 1px solid #036a13;
+    padding: 8px;
+}
+
+.icon-txt
+{
+	text-align: center;
+	display: block;
+	font-size: 15px;
+	color: #036a13;
+}
+.icon:hover
+{
+	-moz-box-shadow: 0 0 10px #036a13;
+	-webkit-box-shadow: 0 0 10px #036a13;
+	box-shadow: 0 0 10px #036a13;
+}
