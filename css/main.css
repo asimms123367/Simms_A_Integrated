@@ -191,18 +191,18 @@ input, textarea{
 	padding-bottom: 80px;
 }
 
-#picture-right, #picture-left{
+.picture-right, .picture-left{
 	height: 300px;
 	width: 200px;
 	object-fit: cover;
 }
 
-#picture-left{
+.picture-left{
 	grid-column: 1/2;
 	grid-row: 1/1;
 }
 
-#picture-right{
+.picture-right{
 	grid-column: 3/4;
 	grid-row: 1/1;
 }
@@ -235,7 +235,7 @@ input, textarea{
 	font-size: 20px;
 }
 
-#productInfo-text{
+.productInfo-text{
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-bottom: 20px;
@@ -291,7 +291,7 @@ li{
 	font-size: 20px;
 }
 
-a, #footer-nav{
+a, .footer-nav{
 	color: green;
 }
 
@@ -395,13 +395,20 @@ a, #footer-nav{
 	width: 440px;
 }
 
-#contact-imgs{
-	width: 115px;
-	height: 146px;
-	object-fit: cover;
+.contact-imgs{
+	width: 126px;
+	height: 160px;
+	object-fit:cover;
+	margin: 4px;
 }
 
-.form{
+.cont-txt-tnt
+{
+	margin-top:75px;
+}
+
+.cont-form{
+	margin: auto;
 	display: flex;
 	flex-direction: column;
 
