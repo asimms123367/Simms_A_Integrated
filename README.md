@@ -1,7 +1,7 @@
-# Simms_A_Integrated
+# Final Integrated Project
 
 #ABOUT
-
+The final integrated project (FIP) is a combination of all my core courses combined for submission. In this project there is a combination of my logo design, site layout, typography, colours, alignment and photograhy and optimization for the web.
 
 
 # MIT License
